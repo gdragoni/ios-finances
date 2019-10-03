@@ -8,19 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		5D8D57E623462FFD00C5C648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D57E523462FFD00C5C648 /* AppDelegate.swift */; };
-		5D8D57ED23462FFD00C5C648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8D57EB23462FFD00C5C648 /* Main.storyboard */; };
+		5D8D57ED23462FFD00C5C648 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8D57EB23462FFD00C5C648 /* Start.storyboard */; };
 		5D8D57EF23462FFF00C5C648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8D57EE23462FFF00C5C648 /* Assets.xcassets */; };
 		5D8D57F223462FFF00C5C648 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8D57F023462FFF00C5C648 /* LaunchScreen.storyboard */; };
+		5D8D58002346360E00C5C648 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D57FF2346360E00C5C648 /* StartView.swift */; };
+		5D8D5803234636AC00C5C648 /* Finances.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8D5802234636AC00C5C648 /* Finances.storyboard */; };
+		5D8D58052346371000C5C648 /* StoryboardEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58042346371000C5C648 /* StoryboardEnums.swift */; };
+		5D8D58082346392F00C5C648 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58072346392F00C5C648 /* UIViewController+Utils.swift */; };
+		5D8D580A2346398000C5C648 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58092346398000C5C648 /* UIViewController+Alert.swift */; };
+		5D8D580C23463B1100C5C648 /* FinancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D580B23463B1100C5C648 /* FinancesView.swift */; };
+		5D8D580F23463BFE00C5C648 /* ListProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D580E23463BFE00C5C648 /* ListProviderViewController.swift */; };
+		5D8D581223463CA700C5C648 /* CellProviderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D581123463CA700C5C648 /* CellProviderProtocols.swift */; };
+		5D8D58142346407B00C5C648 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58132346407B00C5C648 /* Expense.swift */; };
+		5D8D58162346410A00C5C648 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58152346410A00C5C648 /* Enviroment.swift */; };
 		F9E8A09F768E85F513FEE1C5 /* Pods_Finances.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7037A4F236D913B6B00081BE /* Pods_Finances.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5D8D57E223462FFD00C5C648 /* Finances.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finances.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8D57E523462FFD00C5C648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D8D57EC23462FFD00C5C648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D8D57EC23462FFD00C5C648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		5D8D57EE23462FFF00C5C648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D8D57F123462FFF00C5C648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D8D57F323462FFF00C5C648 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8D57FF2346360E00C5C648 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		5D8D5802234636AC00C5C648 /* Finances.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Finances.storyboard; sourceTree = "<group>"; };
+		5D8D58042346371000C5C648 /* StoryboardEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardEnums.swift; sourceTree = "<group>"; };
+		5D8D58072346392F00C5C648 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		5D8D58092346398000C5C648 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		5D8D580B23463B1100C5C648 /* FinancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancesView.swift; sourceTree = "<group>"; };
+		5D8D580E23463BFE00C5C648 /* ListProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProviderViewController.swift; sourceTree = "<group>"; };
+		5D8D581123463CA700C5C648 /* CellProviderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProviderProtocols.swift; sourceTree = "<group>"; };
+		5D8D58132346407B00C5C648 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		5D8D58152346410A00C5C648 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		7037A4F236D913B6B00081BE /* Pods_Finances.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finances.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB94B2BA218ED56BF22872BF /* Pods-Finances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finances.release.xcconfig"; path = "Target Support Files/Pods-Finances/Pods-Finances.release.xcconfig"; sourceTree = "<group>"; };
 		DF6930141F3E3260661ACAB8 /* Pods-Finances.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finances.debug.xcconfig"; path = "Target Support Files/Pods-Finances/Pods-Finances.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,7 +64,6 @@
 				DF6930141F3E3260661ACAB8 /* Pods-Finances.debug.xcconfig */,
 				BB94B2BA218ED56BF22872BF /* Pods-Finances.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -72,9 +91,10 @@
 				5D8D57FC2346317500C5C648 /* Commom */,
 				5D8D57F9234630E500C5C648 /* Modules */,
 				5D8D57FA2346313400C5C648 /* Entities */,
+				5D8D58062346391700C5C648 /* Extensions */,
+				5D8D581023463C6900C5C648 /* Protocols */,
 				5D8D57FB2346315B00C5C648 /* Views */,
 				5D8D57E523462FFD00C5C648 /* AppDelegate.swift */,
-				5D8D57EB23462FFD00C5C648 /* Main.storyboard */,
 				5D8D57EE23462FFF00C5C648 /* Assets.xcassets */,
 				5D8D57F023462FFF00C5C648 /* LaunchScreen.storyboard */,
 				5D8D57F323462FFF00C5C648 /* Info.plist */,
@@ -85,6 +105,7 @@
 		5D8D57F9234630E500C5C648 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5D8D57FE234635F600C5C648 /* Start */,
 				5D8D57FD234631A700C5C648 /* FinancesList */,
 			);
 			path = Modules;
@@ -93,6 +114,7 @@
 		5D8D57FA2346313400C5C648 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				5D8D58132346407B00C5C648 /* Expense.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -100,6 +122,8 @@
 		5D8D57FB2346315B00C5C648 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5D8D580D23463B4000C5C648 /* Subclasses */,
+				5D8D58012346362C00C5C648 /* Storyboards */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -107,6 +131,7 @@
 		5D8D57FC2346317500C5C648 /* Commom */ = {
 			isa = PBXGroup;
 			children = (
+				5D8D58152346410A00C5C648 /* Enviroment.swift */,
 			);
 			path = Commom;
 			sourceTree = "<group>";
@@ -114,8 +139,52 @@
 		5D8D57FD234631A700C5C648 /* FinancesList */ = {
 			isa = PBXGroup;
 			children = (
+				5D8D580B23463B1100C5C648 /* FinancesView.swift */,
 			);
 			path = FinancesList;
+			sourceTree = "<group>";
+		};
+		5D8D57FE234635F600C5C648 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				5D8D57FF2346360E00C5C648 /* StartView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		5D8D58012346362C00C5C648 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5D8D58042346371000C5C648 /* StoryboardEnums.swift */,
+				5D8D57EB23462FFD00C5C648 /* Start.storyboard */,
+				5D8D5802234636AC00C5C648 /* Finances.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5D8D58062346391700C5C648 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5D8D58072346392F00C5C648 /* UIViewController+Utils.swift */,
+				5D8D58092346398000C5C648 /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5D8D580D23463B4000C5C648 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				5D8D580E23463BFE00C5C648 /* ListProviderViewController.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
+		5D8D581023463C6900C5C648 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5D8D581123463CA700C5C648 /* CellProviderProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		75876B54F062AECED659F718 /* Frameworks */ = {
@@ -186,8 +255,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D8D57F223462FFF00C5C648 /* LaunchScreen.storyboard in Resources */,
+				5D8D5803234636AC00C5C648 /* Finances.storyboard in Resources */,
 				5D8D57EF23462FFF00C5C648 /* Assets.xcassets in Resources */,
-				5D8D57ED23462FFD00C5C648 /* Main.storyboard in Resources */,
+				5D8D57ED23462FFD00C5C648 /* Start.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,19 +293,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8D580A2346398000C5C648 /* UIViewController+Alert.swift in Sources */,
+				5D8D58082346392F00C5C648 /* UIViewController+Utils.swift in Sources */,
+				5D8D58162346410A00C5C648 /* Enviroment.swift in Sources */,
 				5D8D57E623462FFD00C5C648 /* AppDelegate.swift in Sources */,
+				5D8D58052346371000C5C648 /* StoryboardEnums.swift in Sources */,
+				5D8D58002346360E00C5C648 /* StartView.swift in Sources */,
+				5D8D580F23463BFE00C5C648 /* ListProviderViewController.swift in Sources */,
+				5D8D58142346407B00C5C648 /* Expense.swift in Sources */,
+				5D8D581223463CA700C5C648 /* CellProviderProtocols.swift in Sources */,
+				5D8D580C23463B1100C5C648 /* FinancesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5D8D57EB23462FFD00C5C648 /* Main.storyboard */ = {
+		5D8D57EB23462FFD00C5C648 /* Start.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5D8D57EC23462FFD00C5C648 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
 		5D8D57F023462FFF00C5C648 /* LaunchScreen.storyboard */ = {
@@ -378,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dragoni.Finances;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SESSION_KEYCHAIN_IDENTIFIER = "FINANCES-KEYCHAIN-IDENTIFIER-DEBUG";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,6 +478,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dragoni.Finances;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SESSION_KEYCHAIN_IDENTIFIER = "FINANCES-KEYCHAIN-IDENTIFIER-RELEASE";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
