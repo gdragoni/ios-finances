@@ -21,6 +21,8 @@
 		5D8D581223463CA700C5C648 /* CellProviderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D581123463CA700C5C648 /* CellProviderProtocols.swift */; };
 		5D8D58142346407B00C5C648 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58132346407B00C5C648 /* Expense.swift */; };
 		5D8D58162346410A00C5C648 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58152346410A00C5C648 /* Enviroment.swift */; };
+		5D9D15C8234B7B2D008FEC89 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9D15C7234B7B2D008FEC89 /* Authentication.storyboard */; };
+		5D9D15CA234B7BDB008FEC89 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15C9234B7BDB008FEC89 /* Session.swift */; };
 		F9E8A09F768E85F513FEE1C5 /* Pods_Finances.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7037A4F236D913B6B00081BE /* Pods_Finances.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		5D8D581123463CA700C5C648 /* CellProviderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProviderProtocols.swift; sourceTree = "<group>"; };
 		5D8D58132346407B00C5C648 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		5D8D58152346410A00C5C648 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		5D9D15C7234B7B2D008FEC89 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		5D9D15C9234B7BDB008FEC89 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		7037A4F236D913B6B00081BE /* Pods_Finances.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finances.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB94B2BA218ED56BF22872BF /* Pods-Finances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finances.release.xcconfig"; path = "Target Support Files/Pods-Finances/Pods-Finances.release.xcconfig"; sourceTree = "<group>"; };
 		DF6930141F3E3260661ACAB8 /* Pods-Finances.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finances.debug.xcconfig"; path = "Target Support Files/Pods-Finances/Pods-Finances.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				5D8D58152346410A00C5C648 /* Enviroment.swift */,
+				5D9D15C9234B7BDB008FEC89 /* Session.swift */,
 			);
 			path = Commom;
 			sourceTree = "<group>";
@@ -156,8 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				5D8D58042346371000C5C648 /* StoryboardEnums.swift */,
-				5D8D57EB23462FFD00C5C648 /* Start.storyboard */,
+				5D9D15C7234B7B2D008FEC89 /* Authentication.storyboard */,
 				5D8D5802234636AC00C5C648 /* Finances.storyboard */,
+				5D8D57EB23462FFD00C5C648 /* Start.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				5D8D57DE23462FFD00C5C648 /* Sources */,
 				5D8D57DF23462FFD00C5C648 /* Frameworks */,
 				5D8D57E023462FFD00C5C648 /* Resources */,
+				BFE22744F746C9BE8198C5BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +265,7 @@
 				5D8D5803234636AC00C5C648 /* Finances.storyboard in Resources */,
 				5D8D57EF23462FFF00C5C648 /* Assets.xcassets in Resources */,
 				5D8D57ED23462FFD00C5C648 /* Start.storyboard in Resources */,
+				5D9D15C8234B7B2D008FEC89 /* Authentication.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +294,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BFE22744F746C9BE8198C5BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Finances/Pods-Finances-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Finances/Pods-Finances-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Finances/Pods-Finances-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -300,6 +325,7 @@
 				5D8D58052346371000C5C648 /* StoryboardEnums.swift in Sources */,
 				5D8D58002346360E00C5C648 /* StartView.swift in Sources */,
 				5D8D580F23463BFE00C5C648 /* ListProviderViewController.swift in Sources */,
+				5D9D15CA234B7BDB008FEC89 /* Session.swift in Sources */,
 				5D8D58142346407B00C5C648 /* Expense.swift in Sources */,
 				5D8D581223463CA700C5C648 /* CellProviderProtocols.swift in Sources */,
 				5D8D580C23463B1100C5C648 /* FinancesView.swift in Sources */,
