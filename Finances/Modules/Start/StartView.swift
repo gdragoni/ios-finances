@@ -14,32 +14,21 @@ class StartView: UIViewController {
         
         if BiometricAuthentication.canEvaluatePolicy {
             
-            performSegue(withIdentifier: SeguesFrom.start.toBiometric, sender: nil)
+            performSegue(withIdentifier: SeguesFrom.start.toBiometric, sender: BiometricAuthenticationPresenter(segueFrom: SeguesFrom.start.toBiometric))
         } else if Session.current.password != nil {
             
-            performSegue(withIdentifier: SeguesFrom.start.toLogin, sender: nil)
+            performSegue(withIdentifier: SeguesFrom.start.toLogin, sender: LoginAuthenticationPresenter(segueFrom: SeguesFrom.start.toLogin))
         } else {
             
-            performSegue(withIdentifier: SeguesFrom.start.toRegister, sender: nil)
+            performSegue(withIdentifier: SeguesFrom.start.toRegister, sender: RegisterAuthenticationPresenter(segueFrom: SeguesFrom.start.toRegister))
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if  let segueIdentifier = segue.identifier,
-            let segueFrom = SeguesFrom.start(rawValue: segueIdentifier),
-            let authView = segue.destination as? AuthenticationViewProtocol {
-            switch segueFrom {
-            case .toLogin:
-                authView.presenter = LoginAuthenticationPresenter(segueFrom: segueFrom)
-                break
-            case .toRegister:
-                authView.presenter = RegisterAuthenticationPresenter(segueFrom: segueFrom)
-                break
-            case .toBiometric:
-                authView.presenter = BiometricAuthenticationPresenter(segueFrom: segueFrom)
-                break
-            }
-            authView.presenter.view = authView
+        if  let authView = segue.destination as? AuthenticationViewProtocol,
+            let authPresenter = sender as? AuthenticationPresenterProtocol {
+            authView.presenter = authPresenter
+            authPresenter.view = authView
         }
     }
 }
