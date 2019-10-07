@@ -3,9 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>Enviroment</key>
-	<dict/>
-	<key>SESSION_KEYCHAIN_IDENTIFIER</key>
-	<string>$(SESSION_KEYCHAIN_IDENTIFIER)</string>
+	<dict>
+		<key>SESSION_KEYCHAIN_IDENTIFIER</key>
+		<string>$(SESSION_KEYCHAIN_IDENTIFIER)</string>
+	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

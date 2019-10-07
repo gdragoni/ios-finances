@@ -11,10 +11,10 @@
         <!--Navigation Controller-->
         <scene sceneID="QOS-xz-Blx">
             <objects>
-                <navigationController id="2au-15-J0Y" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Fj5-3k-Sk3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                <navigationController navigationBarHidden="YES" id="2au-15-J0Y" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Fj5-3k-Sk3">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.023529411760000001" green="0.1960784314" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pYB-h1-itH"/>
@@ -31,25 +31,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Onq-SY-Gn4" customClass="GradientView" customModule="Finances" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="WZb-GQ-emr">
+                                        <rect key="frame" x="188.5" y="390.5" width="37" height="37"/>
+                                        <color key="color" red="0.28627450980392155" green="0.67843137254901964" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="WZb-GQ-emr" firstAttribute="centerY" secondItem="Onq-SY-Gn4" secondAttribute="centerY" id="7RB-xU-Xeo"/>
+                                    <constraint firstItem="WZb-GQ-emr" firstAttribute="centerX" secondItem="Onq-SY-Gn4" secondAttribute="centerX" id="LOu-RP-wPt"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.11372549019607843" green="0.33333333333333331" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.023529411760000001" green="0.1960784314" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="diagonalMode" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Onq-SY-Gn4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Czc-oa-aYm"/>
+                            <constraint firstItem="Onq-SY-Gn4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GKa-al-AhW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Onq-SY-Gn4" secondAttribute="trailing" id="R4F-QT-Ocy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Onq-SY-Gn4" secondAttribute="bottom" id="S2H-jN-AYc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="aU0-ZW-AfL"/>
                     <connections>
-                        <segue destination="iIR-CR-VuC" kind="presentation" identifier="toFinances" modalPresentationStyle="fullScreen" id="fOH-GL-1cC"/>
+                        <segue destination="0Xb-Hg-QZP" kind="presentation" identifier="toLogin" modalPresentationStyle="fullScreen" id="Guk-LO-zBj"/>
+                        <segue destination="pzj-AK-4tp" kind="presentation" identifier="toRegister" modalPresentationStyle="fullScreen" id="fIR-gn-bEF"/>
+                        <segue destination="ohC-RE-GLY" kind="presentation" identifier="toBiometric" modalPresentationStyle="fullScreen" id="ECZ-MU-pcO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="155" y="113"/>
         </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="Feb-a0-sQv">
+        <!--Authentication-->
+        <scene sceneID="RP5-zt-TgR">
             <objects>
-                <viewControllerPlaceholder id="iIR-CR-VuC" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="J4p-Se-I3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYd-ix-5a2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Authentication" id="0Xb-Hg-QZP" sceneMemberID="viewController"/>
             </objects>
-            <point key="canvasLocation" x="889" y="113"/>
+            <point key="canvasLocation" x="1133" y="113"/>
+        </scene>
+        <!--Authentication-->
+        <scene sceneID="K6T-cv-Cqy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIr-wv-mSM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Authentication" id="pzj-AK-4tp" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="11"/>
+        </scene>
+        <!--Authentication-->
+        <scene sceneID="dXe-qM-bp6">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wN9-Hy-pbm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Authentication" id="ohC-RE-GLY" sceneMemberID="viewController"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="224"/>
         </scene>
     </scenes>
 </document>

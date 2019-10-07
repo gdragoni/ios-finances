@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,12 @@
 		5D8D58162346410A00C5C648 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8D58152346410A00C5C648 /* Enviroment.swift */; };
 		5D9D15C8234B7B2D008FEC89 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9D15C7234B7B2D008FEC89 /* Authentication.storyboard */; };
 		5D9D15CA234B7BDB008FEC89 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15C9234B7BDB008FEC89 /* Session.swift */; };
+		5D9D15CC234BAF14008FEC89 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15CB234BAF14008FEC89 /* GradientView.swift */; };
+		5D9D15CE234BBD37008FEC89 /* BiometricAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15CD234BBD37008FEC89 /* BiometricAuthentication.swift */; };
+		5D9D15D1234BC052008FEC89 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15D0234BC052008FEC89 /* AuthenticationView.swift */; };
+		5D9D15D3234BC1B0008FEC89 /* AuthenticationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15D2234BC1B0008FEC89 /* AuthenticationProtocols.swift */; };
+		5D9D15D5234BC27D008FEC89 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15D4234BC27D008FEC89 /* AuthenticationPresenter.swift */; };
+		5D9D15D7234BC577008FEC89 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D15D6234BC577008FEC89 /* AuthenticationViewModel.swift */; };
 		F9E8A09F768E85F513FEE1C5 /* Pods_Finances.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7037A4F236D913B6B00081BE /* Pods_Finances.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +51,12 @@
 		5D8D58152346410A00C5C648 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
 		5D9D15C7234B7B2D008FEC89 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		5D9D15C9234B7BDB008FEC89 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		5D9D15CB234BAF14008FEC89 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		5D9D15CD234BBD37008FEC89 /* BiometricAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthentication.swift; sourceTree = "<group>"; };
+		5D9D15D0234BC052008FEC89 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		5D9D15D2234BC1B0008FEC89 /* AuthenticationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocols.swift; sourceTree = "<group>"; };
+		5D9D15D4234BC27D008FEC89 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
+		5D9D15D6234BC577008FEC89 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		7037A4F236D913B6B00081BE /* Pods_Finances.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finances.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB94B2BA218ED56BF22872BF /* Pods-Finances.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finances.release.xcconfig"; path = "Target Support Files/Pods-Finances/Pods-Finances.release.xcconfig"; sourceTree = "<group>"; };
 		DF6930141F3E3260661ACAB8 /* Pods-Finances.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finances.debug.xcconfig"; path = "Target Support Files/Pods-Finances/Pods-Finances.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +121,7 @@
 		5D8D57F9234630E500C5C648 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5D9D15CF234BC043008FEC89 /* Authentication */,
 				5D8D57FE234635F600C5C648 /* Start */,
 				5D8D57FD234631A700C5C648 /* FinancesList */,
 			);
@@ -119,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				5D8D58132346407B00C5C648 /* Expense.swift */,
+				5D9D15D6234BC577008FEC89 /* AuthenticationViewModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -135,6 +149,7 @@
 		5D8D57FC2346317500C5C648 /* Commom */ = {
 			isa = PBXGroup;
 			children = (
+				5D9D15CD234BBD37008FEC89 /* BiometricAuthentication.swift */,
 				5D8D58152346410A00C5C648 /* Enviroment.swift */,
 				5D9D15C9234B7BDB008FEC89 /* Session.swift */,
 			);
@@ -181,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				5D8D580E23463BFE00C5C648 /* ListProviderViewController.swift */,
+				5D9D15CB234BAF14008FEC89 /* GradientView.swift */,
 			);
 			path = Subclasses;
 			sourceTree = "<group>";
@@ -191,6 +207,16 @@
 				5D8D581123463CA700C5C648 /* CellProviderProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5D9D15CF234BC043008FEC89 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5D9D15D0234BC052008FEC89 /* AuthenticationView.swift */,
+				5D9D15D4234BC27D008FEC89 /* AuthenticationPresenter.swift */,
+				5D9D15D2234BC1B0008FEC89 /* AuthenticationProtocols.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		75876B54F062AECED659F718 /* Frameworks */ = {
@@ -318,14 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D9D15D5234BC27D008FEC89 /* AuthenticationPresenter.swift in Sources */,
 				5D8D580A2346398000C5C648 /* UIViewController+Alert.swift in Sources */,
+				5D9D15D7234BC577008FEC89 /* AuthenticationViewModel.swift in Sources */,
 				5D8D58082346392F00C5C648 /* UIViewController+Utils.swift in Sources */,
+				5D9D15CC234BAF14008FEC89 /* GradientView.swift in Sources */,
+				5D9D15CE234BBD37008FEC89 /* BiometricAuthentication.swift in Sources */,
+				5D9D15D3234BC1B0008FEC89 /* AuthenticationProtocols.swift in Sources */,
 				5D8D58162346410A00C5C648 /* Enviroment.swift in Sources */,
 				5D8D57E623462FFD00C5C648 /* AppDelegate.swift in Sources */,
 				5D8D58052346371000C5C648 /* StoryboardEnums.swift in Sources */,
 				5D8D58002346360E00C5C648 /* StartView.swift in Sources */,
 				5D8D580F23463BFE00C5C648 /* ListProviderViewController.swift in Sources */,
 				5D9D15CA234B7BDB008FEC89 /* Session.swift in Sources */,
+				5D9D15D1234BC052008FEC89 /* AuthenticationView.swift in Sources */,
 				5D8D58142346407B00C5C648 /* Expense.swift in Sources */,
 				5D8D581223463CA700C5C648 /* CellProviderProtocols.swift in Sources */,
 				5D8D580C23463B1100C5C648 /* FinancesView.swift in Sources */,

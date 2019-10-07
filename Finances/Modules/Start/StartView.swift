@@ -12,6 +12,34 @@ class StartView: UIViewController {
     
     override func viewDidLoad() {
         
-        performSegue(withIdentifier: SeguesFrom.start.toFinances, sender: nil)
+        if BiometricAuthentication.canEvaluatePolicy {
+            
+            performSegue(withIdentifier: SeguesFrom.start.toBiometric, sender: nil)
+        } else if Session.current.password != nil {
+            
+            performSegue(withIdentifier: SeguesFrom.start.toLogin, sender: nil)
+        } else {
+            
+            performSegue(withIdentifier: SeguesFrom.start.toRegister, sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if  let segueIdentifier = segue.identifier,
+            let segueFrom = SeguesFrom.start(rawValue: segueIdentifier),
+            let authView = segue.destination as? AuthenticationViewProtocol {
+            switch segueFrom {
+            case .toLogin:
+                authView.presenter = LoginAuthenticationPresenter(segueFrom: segueFrom)
+                break
+            case .toRegister:
+                authView.presenter = RegisterAuthenticationPresenter(segueFrom: segueFrom)
+                break
+            case .toBiometric:
+                authView.presenter = BiometricAuthenticationPresenter(segueFrom: segueFrom)
+                break
+            }
+            authView.presenter.view = authView
+        }
     }
 }

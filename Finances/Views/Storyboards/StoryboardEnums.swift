@@ -9,13 +9,20 @@
 import Foundation
 
 enum Storyboards: String {
-    case start = "Start"
+    case authentication = "Authentication"
     case finances = "Finances"
+    case start = "Start"
 }
 
 struct SeguesFrom {
     
     enum start: String, SegueEnumProtocol {
+        case toLogin = "toLogin"
+        case toBiometric = "toBiometric"
+        case toRegister = "toRegister"
+    }
+    
+    enum authentication: String, SegueEnumProtocol {
         case toFinances = "toFinances"
     }
 }
